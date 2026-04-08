@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CODE नक्षत्र II</title>
+    <link rel="icon"
+        href="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-11-09%20at%2012.28.53_708e1398.jpg?updatedAt=1762673483251"
+        type="image/png" />
+    <meta name="description"
+        content="CODE नक्षत्र II is an innovative tech fest designed to challenge your limits, spark creativity, and build a collaborative community of developers." />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- GSAP 3 via CDN -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <!-- Orbitron Font (Preloader) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- League Spartan Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Open Graph / Twitter Cards -->
+    <meta property="og:title" content="CODE नक्षत्र II - Hack Vortex" />
+    <meta property="og:description" content="A massive hybrid hackathon by GeekRoom JIMS, Rohini." />
+    <meta property="og:image" content="https://ik.imagekit.io/logicsync/banner.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+        if (sessionStorage.getItem('visited_preloader')) {
+            document.documentElement.classList.add('hide-preloader');
+        }
+    </script>
+    <style>
+        .hide-preloader #preloader-overlay,
+        .hide-preloader #pl-loading,
+        .hide-preloader #pl-entering,
+        .hide-preloader #pl-skip {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="__className_36bd41 bg-[#030014] overflow-y-scroll overflow-x-hidden relative">
+    <!-- Deep-Space Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+    <!-- Preloader Overlay (sits above all page content) -->
+    <div id="preloader-overlay">
+        <div id="pl-loading">CALIBRATING TELESCOPES...</div>
+        <!-- <div id="pl-entering">ENTERING THE UNIVERSE...</div> -->
+        <button id="pl-skip" onclick="skipPreloader()">SKIP ›</button>
+        <!-- HUD Info Boxes -->
+        <div class="pl-info-box" id="pl-box-0">
+            <div class="pl-info-label">Event</div>
+            <div class="pl-info-value" id="pl-box-0-val"></div>
+        </div>
+        <div class="pl-info-box" id="pl-box-1">
+            <div class="pl-info-label">Details</div>
+            <div class="pl-info-value" id="pl-box-1-val"></div>
+        </div>
+        <div class="pl-info-box" id="pl-box-2">
+            <div class="pl-info-label">Prize Pool</div>
+            <div class="pl-info-value" id="pl-box-2-val"></div>
+        </div>
+        <div class="pl-info-box" id="pl-box-3">
+            <div class="pl-info-label">Highlights</div>
+            <div class="pl-info-value" id="pl-box-3-val"></div>
+        </div>
+        <div class="pl-info-box" id="pl-box-4">
+            <div class="pl-info-label">Venue</div>
+            <div class="pl-info-value" id="pl-box-4-val"></div>
+        </div>
+        <div class="pl-info-box" id="pl-box-5">
+            <div class="pl-info-label">Status</div>
+            <div class="pl-info-value" id="pl-box-5-val"></div>
+        </div>
+    </div>
+    <section id="gallery"
+        class="flex flex-col items-center justify-center py-32 z-[100] relative overflow-hidden bg-transparent">
+        <div class="layered-header z-[100]">
+            <span class="header-bg-text">MEMORIES</span>
+            <div class="header-fg-text h1-div-style">PAST MEMORIES</div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row items-center justify-center gap-32 w-full max-w-[1400px] px-10 relative z-[100] mt-20 gallery-track">
+            <div
+                class="card-deck relative w-[230px] h-[40vh] flex items-center justify-center cursor-pointer group transition-all duration-700 ease-in-out">
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-10deg) translateX(-10px); z-index: 1;"><img
+                        src="https://ik.imagekit.io/logicsync/nakshatra.jpg?updatedAt=1759836200474"
+                        alt="Students collaborating at CODE नक्षत्र hackathon" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-5deg) translateX(-5px); z-index: 2;"><img
+                        src="https://ik.imagekit.io/logicsync/sih222.jpg?updatedAt=1759836292864"
+                        alt="Project display at CODE नक्षत्र hackathon" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(0deg) translateX(0); z-index: 3;"><img
+                        src="https://ik.imagekit.io/logicsync/the%20trio%202.jpg?updatedAt=1759836200462"
+                        alt="Team presenting their project" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(5deg) translateX(5px); z-index: 4;"><img
+                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-07%20at%2016.40.42_dfe11458.jpg?updatedAt=1759835587174"
+                        alt="Mentors guiding hackathon participants" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(10deg) translateX(10px); z-index: 5;"><img
+                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-07%20at%2016.40.43_87cd2bab.jpg?updatedAt=1759835587148"
+                        alt="Prize distribution at hackathon" class="w-full h-full object-cover"></div>
+            </div>
+            <div
+                class="card-deck relative w-[230px] h-[40vh] flex items-center justify-center cursor-pointer group scale-110 transition-all duration-700 ease-in-out">
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-10deg) translateX(-10px); z-index: 1;"><img
+                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-07%20at%2016.40.46_0b6af5dc.jpg?updatedAt=1759835587072"
+                        alt="Mentors guiding hackathon participants" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-5deg) translateX(-5px); z-index: 2;"><img
+                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-07%20at%2016.40.04_efbeb055.jpg?updatedAt=1759835587076"
+                        alt="Prize distribution at hackathon" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(0deg) translateX(0); z-index: 3;"><img
+                        src="https://ik.imagekit.io/logicsync/banner.jpg?updatedAt=1759836200452"
+                        alt="Students collaborating at CODE नक्षत्र hackathon" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(5deg) translateX(5px); z-index: 4;"><img
+                        src="https://ik.imagekit.io/logicsync/hosted.jpg?updatedAt=1759836200294"
+                        alt="Project display at CODE नक्षत्र hackathon" class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(10deg) translateX(10px); z-index: 5;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha19.jpg" alt="Team presenting their project"
+                        class="w-full h-full object-cover"></div>
+            </div>
+            <div
+                class="card-deck relative w-[230px] h-[40vh] flex items-center justify-center cursor-pointer group transition-all duration-700 ease-in-out">
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-10deg) translateX(-10px); z-index: 1;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha1.jpg" alt="Project display at CODE नक्षत्र hackathon"
+                        class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(-5deg) translateX(-5px); z-index: 2;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha17.jpg" alt="Team presenting their project"
+                        class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(0deg) translateX(0); z-index: 3;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha7.jpg" alt="Mentors guiding hackathon participants"
+                        class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(5deg) translateX(5px); z-index: 4;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha18.jpg" alt="Prize distribution at hackathon"
+                        class="w-full h-full object-cover"></div>
+                <div class="memory-card absolute w-[210px] h-[290px] rounded-lg shadow-xl border-[4px] border-[#f1f5f9] bg-gray-900 overflow-hidden"
+                    style="transform: rotate(10deg) translateX(10px); z-index: 5;"><img
+                        src="https://ik.imagekit.io/logicsync/Ha7.jpg" alt="Group photo of hackathon winners"
+                        class="w-full h-full object-cover"></div>
+            </div>
+            <!-- Instruction text overlay -->
+            <div class="absolute -top-24 text-gray-400 font-medium text-lg italic tracking-widest animate-pulse pointer-events-none drop-shadow-md z-[200]"
+                id="deck-instruction">
+                Click a deck to explore memories
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Script relocated to main.js -->
+
+    <div class="w-full h-auto fixed inset-0 z-[20]">
+        <div style="
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: auto;
+          ">
+            <div style="width: 100%; height: 100%">
+                <canvas data-engine="three.js r157" width="2680" height="2524"
+                    style="display: block; width: 1340.19px; height: 1262.48px"></canvas>
+            </div>
+        </div>
+    </div>
+    <nav
+        class="w-full h-[60px] fixed top-0 left-0 bg-[#030014]/30 backdrop-blur-md z-[1000] border-b border-purple-500/20 transition-all duration-300 flex items-center">
+        <div class="w-full max-w-[1600px] h-full flex flex-row items-center justify-between m-auto px-4 lg:px-10">
+            <!-- Left: Logo Space -->
+            <div class="flex flex-row items-center gap-4">
+                <a href="#about-me" class="flex flex-row items-center justify-center gap-3">
+                    <img src="https://ik.imagekit.io/logicsync/nakshatra%20logo.png" alt="CODE Nakshatra Logo"
+                        class="w-[45px] h-[45px] lg:w-[54px] lg:h-[54px] object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]" />
+                    <span class="font-bold text-gray-200 text-lg md:text-xl whitespace-nowrap tracking-wide">CODE
+                        नक्षत्र
+                        II</span>
+                </a>
+            </div>
+            <!-- Center: Desktop Links -->
+            <div class="hidden xl:flex flex-row items-center gap-6 2xl:gap-8"
+                style="font-family: 'League Spartan', sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 1.5px;">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors uppercase">Home</a>
+                <a href="#about-event" class="text-gray-300 hover:text-white transition-colors uppercase">About</a>
+                <a href="#venue" class="text-gray-300 hover:text-white transition-colors uppercase">Venue</a>
+                <a href="#timeline" class="text-gray-300 hover:text-white transition-colors uppercase">Schedule</a>
+                <a href="#prizes" class="text-gray-300 hover:text-white transition-colors uppercase">Prizes</a>
+                <a href="#sponsors" class="text-gray-300 hover:text-white transition-colors uppercase">Sponsors</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors uppercase">FAQs</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors uppercase">Contact</a>
+            </div>
+            <!-- Right: Action Banner (Now a Roll-Down) -->
+            <div class="hidden xl:flex flex-row items-center justify-end">
+                <a href="https://www.namespace.world/events/2N5BNA" target="_blank" class="nav-banner-roll">
+                    <img loading="lazy"
+                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-11-09%20at%2012.28.53_708e1398.jpg?updatedAt=1762673483251"
+                        alt="Register Now" class="w-[100px] drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]" />
+                </a>
+            </div>
+
+            <!-- Mobile: Hamburger Menu -->
+            <div class="relative flex xl:hidden items-center justify-end">
+                <button id="mobile-menu-btn"
+                    class="text-gray-300 hover:text-white focus:outline-none p-2 rounded-lg hover:bg-white/10 transition-colors">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <div id="mobile-dropdown"
+                    class="absolute top-[60px] right-0 bg-[#0c051f]/95 backdrop-blur-xl border border-purple-500/30 w-48 rounded-xl shadow-[0_10px_40px_rgba(168,85,247,0.4)] opacity-0 invisible translate-y-[-10px] transition-all duration-300 ease-in-out flex flex-col overflow-hidden z-[1001] shadow-2xl">
+                    <a href="#home"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">Home</a>
+                    <a href="#about-event"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">About</a>
+                    <a href="#venue"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">Venue</a>
+                    <a href="#timeline"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">Schedule</a>
+                    <a href="#prizes"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">Prizes</a>
+                    <a href="#sponsors"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">Sponsors</a>
+                    <a href="#faq"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 border-b border-purple-500/10 transition-colors uppercase text-sm">FAQs</a>
+                    <a href="#contact"
+                        class="px-5 py-3 text-gray-300 font-medium hover:text-white hover:bg-purple-500/20 transition-colors uppercase text-sm">Contact</a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <main class="h-full w-full">
+        <main class="flex flex-col gap-20">
+            <div class="relative flex flex-col h-full w-full" id="about-me">
+
+                <div class="flex flex-row items-center justify-center px-1 md:px-20 mt-16 w-full z-[20]">
+                    <div class="h-full w-full flex flex-col gap-2 justify-center items-center m-auto text-center">
+                        <div class="mt-2 max-w-[800px] w-full -translate-y-64 relative"
+                            style="opacity: 1; transform: none;">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/imggggg.png" alt="CODE नक्षत्र II"
+                                class="w-full h-auto brightness-105 drop-shadow-[0_0_65px_rgba(168,85,247,0.55)] transition-all duration-500 ease-out hover:scale-[1.03] hover:drop-shadow-[0_0_100px_rgba(168,85,247,0.85)] cursor-default" />
+                        </div>
+                        <p class="text-sm md:text-base text-gray-400 mt-[-40px] mb-2 max-w-[800px]"
+                            style="opacity: 1; will-change: auto; transform: none; font-family: 'League Spartan', sans-serif;">
+                            Live through a thrilling competition of the best of the best
+                            coders from around the nation, at CODE नक्षत्र II, a hybrid
+                            technical community organized by the students of Trinity Institute of Innovation in
+                            Professional studies
+                            Greater Noida
+                        </p>
+                        <div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 mt-4"
+                            style="opacity: 1; will-change: auto; transform: none">
+                            <a class="px-8 py-3 w-full md:w-auto text-center text-white font-semibold cursor-pointer rounded-lg min-w-[180px] bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-purple-500/50"
+                                target="_blank" href="https://www.namespace.world/events/2N5BNA"
+                                rel="noreferrer noopener">Register
+                                Now</a>
+                            <a class="px-8 py-3 w-full md:w-auto text-center text-white font-semibold cursor-pointer rounded-lg min-w-[180px] bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-purple-500/50 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] flex items-center justify-center gap-2"
+                                target="_blank" href="https://linktr.ee/coderangerss" rel="noreferrer noopener">
+                                <span>Join Us</span>
+                            </a>
+                        </div>
+                        <!-- Typewriter Section -->
+                        <div class="typewriter-container mt-12 px-4 w-full flex justify-center items-center">
+                            <span id="typewriter-text" class="text-lg sm:text-2xl md:text-3xl font-bold uppercase break-words text-center"></span>
+                            <span id="typewriter-cursor" class="text-xl sm:text-3xl md:text-4xl ml-1">|</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section skills removed -->
+            <!-- Journey Section -->
+            <section id="journey"
+                class="relative py-32 flex flex-col items-center justify-center overflow-hidden z-[100] bg-transparent">
+                <div class="layered-header mb-10 z-20 px-2 w-full">
+                    <span class="header-bg-text w-full max-w-full truncate overflow-hidden">JOURNEY</span>
+                    <div class="header-fg-text h1-div-style text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 drop-shadow-[0_0_15px_rgba(168,85,247,0.3)] text-center break-words"
+                        style="font-size: clamp(1.8rem, 5vw, 3.5rem); letter-spacing: 0.1em;">JOURNEY OF CR</div>
+                </div>
+                <div
+                    class="relative w-full max-w-[900px] h-[550px] flex items-center justify-center z-10 scale-[0.4] sm:scale-[0.55] md:scale-[0.65] lg:scale-[0.7]">
+                    <!-- Concentric Rings (Orbits) -->
+                    <div class="absolute w-[300px] h-[300px] rounded-full border-[1.5px] border-white/40"></div>
+                    <div class="absolute w-[500px] h-[500px] rounded-full border-[1.5px] border-white/30"></div>
+                    <div class="absolute w-[700px] h-[700px] rounded-full border-[1.5px] border-white/20"></div>
+                    <div class="absolute w-[850px] h-[850px] rounded-full border-[1.5px] border-white/20"></div>
+                    <!-- Center Moon Graphic -->
+                    <div class="absolute w-[240px] h-[240px] z-20 flex items-center justify-center pointer-events-none">
+                        <img loading="lazy" src="https://ik.imagekit.io/logicsync/moon?updatedAt=1774366974602"
+                            alt="Center Moon"
+                            class="w-full h-full object-contain filter drop-shadow-[0_0_40px_rgba(255,255,255,0.25)]"
+                            style="animation: spin 20s linear infinite;" />
+                    </div>
+                    <!-- Cards Orbital System -->
+                    <div class="absolute z-30 pointer-events-none flex items-center justify-center w-0 h-0">
+                        <!-- Card 1: 48+ Hack Hours (Ring 3, r=350px, angle 0deg) -->
+                        <div class="absolute" style="transform: rotate(0deg);">
+                            <div class="absolute flex items-center justify-center w-0 h-0"
+                                style="animation: spin 24s linear infinite;">
+                                <div class="absolute" style="transform: translateY(-350px);">
+                                    <div class="absolute flex items-center justify-center w-0 h-0"
+                                        style="animation: spin 24s linear infinite reverse;">
+                                        <div class="absolute" style="transform: rotate(0deg); pointer-events: auto;">
+                                            <div
+                                                class="absolute w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_15px_#22d3ee] -translate-x-1/2 -translate-y-1/2 z-40">
+                                            </div>
+                                            <div
+                                                class="absolute left-[15px] -translate-y-1/2 flex flex-col items-start bg-[rgba(15,23,42,0.6)] backdrop-blur-md border border-white/10 border-l-cyan-400 border-l-2 rounded-xl px-5 py-2 shadow-lg hover:scale-105 transition-transform z-30 w-max">
+                                                <h2
+                                                    class="text-white text-[1.8rem] font-bold font-['League_Spartan'] leading-none">
+                                                    36+</h2>
+                                                <p
+                                                    class="text-gray-300 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">
+                                                    Hack Hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2: 5000+ Participants (Ring 4, r=425px, angle -90deg) -->
+                        <div class="absolute" style="transform: rotate(-90deg);">
+                            <div class="absolute flex items-center justify-center w-0 h-0"
+                                style="animation: spin 35s linear infinite;">
+                                <div class="absolute" style="transform: translateY(-425px);">
+                                    <div class="absolute flex items-center justify-center w-0 h-0"
+                                        style="animation: spin 35s linear infinite reverse;">
+                                        <div class="absolute" style="transform: rotate(90deg); pointer-events: auto;">
+                                            <div
+                                                class="absolute w-3 h-3 bg-fuchsia-400 rounded-full shadow-[0_0_15px_#e879f9] -translate-x-1/2 -translate-y-1/2 z-40">
+                                            </div>
+                                            <div
+                                                class="absolute right-[15px] -translate-y-1/2 flex flex-col items-end bg-[rgba(15,23,42,0.6)] backdrop-blur-md border border-white/10 border-r-fuchsia-400 border-r-2 rounded-xl px-5 py-2 shadow-lg hover:scale-105 transition-transform z-30 w-max text-right">
+                                                <h2
+                                                    class="text-white text-[1.8rem] font-bold font-['League_Spartan'] leading-none">
+                                                    5000+</h2>
+                                                <p
+                                                    class="text-gray-300 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">
+                                                    Participants<br>Across Events</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3: 150+ Projects (Ring 3, r=350px, angle -120deg) -->
+                        <div class="absolute" style="transform: rotate(-120deg);">
+                            <div class="absolute flex items-center justify-center w-0 h-0"
+                                style="animation: spin 24s linear infinite;">
+                                <div class="absolute" style="transform: translateY(-350px);">
+                                    <div class="absolute flex items-center justify-center w-0 h-0"
+                                        style="animation: spin 24s linear infinite reverse;">
+                                        <div class="absolute" style="transform: rotate(120deg); pointer-events: auto;">
+                                            <div
+                                                class="absolute w-3 h-3 bg-blue-400 rounded-full shadow-[0_0_15px_#60a5fa] -translate-x-1/2 -translate-y-1/2 z-40">
+                                            </div>
+                                            <div
+                                                class="absolute right-[15px] top-[5px] flex flex-col items-end bg-[rgba(15,23,42,0.6)] backdrop-blur-md border border-white/10 border-r-blue-400 border-r-2 rounded-xl px-5 py-2 shadow-lg hover:scale-105 transition-transform z-30 w-max text-right">
+                                                <h2
+                                                    class="text-white text-[1.8rem] font-bold font-['League_Spartan'] leading-none">
+                                                    250+</h2>
+                                                <p
+                                                    class="text-gray-300 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">
+                                                    Projects</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4: 200+ Avg Footfall (Ring 4, r=425px, angle 90deg) -->
+                        <div class="absolute" style="transform: rotate(90deg);">
+                            <div class="absolute flex items-center justify-center w-0 h-0"
+                                style="animation: spin 35s linear infinite;">
+                                <div class="absolute" style="transform: translateY(-425px);">
+                                    <div class="absolute flex items-center justify-center w-0 h-0"
+                                        style="animation: spin 35s linear infinite reverse;">
+                                        <div class="absolute" style="transform: rotate(-90deg); pointer-events: auto;">
+                                            <div
+                                                class="absolute w-3 h-3 bg-purple-400 rounded-full shadow-[0_0_15px_#c084fc] -translate-x-1/2 -translate-y-1/2 z-40">
+                                            </div>
+                                            <div
+                                                class="absolute left-[15px] -translate-y-1/2 flex flex-col items-start bg-[rgba(15,23,42,0.6)] backdrop-blur-md border border-white/10 border-l-purple-400 border-l-2 rounded-xl px-5 py-2 shadow-lg hover:scale-105 transition-transform z-30 w-max">
+                                                <h2
+                                                    class="text-white text-[1.8rem] font-bold font-['League_Spartan'] leading-none">
+                                                    300+</h2>
+                                                <p
+                                                    class="text-gray-300 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">
+                                                    Avg. Footfall
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5: 20+ Successful Events (Ring 3, r=350px, angle 120deg) -->
+                        <div class="absolute" style="transform: rotate(120deg);">
+                            <div class="absolute flex items-center justify-center w-0 h-0"
+                                style="animation: spin 24s linear infinite;">
+                                <div class="absolute" style="transform: translateY(-350px);">
+                                    <div class="absolute flex items-center justify-center w-0 h-0"
+                                        style="animation: spin 24s linear infinite reverse;">
+                                        <div class="absolute" style="transform: rotate(-120deg); pointer-events: auto;">
+                                            <div
+                                                class="absolute w-3 h-3 bg-yellow-400 rounded-full shadow-[0_0_15px_#facc15] -translate-x-1/2 -translate-y-1/2 z-40">
+                                            </div>
+                                            <div
+                                                class="absolute left-[15px] top-[5px] flex flex-col items-start bg-[rgba(15,23,42,0.6)] backdrop-blur-md border border-white/10 border-l-yellow-400 border-l-2 rounded-xl px-5 py-2 shadow-lg hover:scale-105 transition-transform z-30 w-max">
+                                                <h2
+                                                    class="text-white text-[1.8rem] font-bold font-['League_Spartan'] leading-none">
+                                                    10+</h2>
+                                                <p
+                                                    class="text-gray-300 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">
+                                                    Successful
+                                                    Events</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scattered decorative particles (triangles/stars) -->
+                    <!-- We can add just a few static SVGs to simulate the background scatter -->
+                    <div class="absolute inset-0 z-0 pointer-events-none opacity-40">
+                        <svg class="absolute top-[10%] left-[20%] w-3 h-3 text-purple-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <polygon points="12,2 24,22 0,22" />
+                        </svg>
+                        <svg class="absolute top-[30%] left-[10%] w-2 h-2 text-cyan-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="12" />
+                        </svg>
+                        <svg class="absolute top-[80%] left-[15%] w-3 h-3 text-gray-500" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <polygon points="12,2 24,22 0,22" />
+                        </svg>
+                        <svg class="absolute top-[15%] right-[25%] w-2 h-2 text-purple-300" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <polygon points="12,2 24,22 0,22" />
+                        </svg>
+                        <svg class="absolute top-[60%] right-[10%] w-2 h-2 text-cyan-300" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="12" />
+                        </svg>
+                        <svg class="absolute top-[85%] right-[20%] w-3 h-3 text-gray-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <polygon points="12,2 24,22 0,22" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section id="about-event" class="about-event-container py-32">
+                <!-- Main Section Header -->
+                <div class="layered-header">
+                    <span class="header-bg-text">ABOUT</span>
+                    <h1 class="header-fg-text h1-div-style">ABOUT THE EVENT</h1>
+                </div>
+                <!-- Floating Assets Wrapper - Placeholders for your images -->
+                <div class="relative w-full max-w-6xl mx-auto">
+                    <!-- Centered Glass Box -->
+                    <div class="about-glass-box mx-auto">
+                        <!-- Top Left Asset - Astronaut -->
+                        <div class="about-asset about-asset-astronaut">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/astronaut.png" alt="Astronaut"
+                                class="w-full h-auto drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]">
+                        </div>
+                        <div class="about-title h1-div-style">WHAT IS CODE नक्षत्र II?</div>
+                        <p class="about-text">
+                            CODE नक्षत्र II is a cutting-edge hybrid Technical Community constructed by the ambitious
+                            students of
+                            This event is designed to bridge the gap between creative
+                            brainstorming and
+                            technical implementation, fostering a space where innovation meets practical solutions.
+                        </p>
+                        <p class="about-text">
+                            The journey begins with a <strong>dynamic Online Round</strong> where participants present
+                            their visionary
+                            projects to a panel of expert mentors. This serves as a filter for the grand finale: a
+                            high-stakes
+                            <strong>Offline Round</strong>. Here, the brightest minds
+                            compete for
+                            recognition, networking with peers, and potentially winning prizes for their groundbreaking
+                            work.
+                        </p>
+                        <p class="about-text text-gray-400 italic">
+                            Still confused about the format? Feel free to <a href="mailto:coderangerss@gmail.com"
+                                class="about-footer-link">contact us anytime</a> for more details.
+                        </p>
+                        <!-- Bottom Right Asset - Spaceship -->
+                        <div class="about-asset about-asset-planet">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/spaceship.png" alt="Spaceship"
+                                class="w-full h-auto drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]">
+                        </div>
+                    </div>
+                </div>
+                <!-- Code Rangers Card - Dedicated Higher Stack -->
+                <div class="relative w-full max-w-6xl mx-auto mt-52 z-[101] pointer-events-auto">
+                    <!-- Centered Glass Box -->
+                    <div class="about-glass-box mx-auto relative z-[102] pointer-events-auto">
+                        <!-- Image Placeholder 1 (Top Left) -->
+                        <div class="about-asset about-asset-astronaut pointer-events-none">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/earth" alt="Code Rangers Asset 1"
+                                class="w-full h-auto drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]">
+                        </div>
+                        <!-- Logo Frame -->
+                        <div
+                            class="code-rangers-logo-frame mx-auto mb-8 w-28 h-28 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-xl shadow-[0_0_40px_rgba(168,85,247,0.2)] hover:shadow-[0_0_60px_rgba(168,85,247,0.4)] hover:border-purple-500/30 transition-all duration-700 ease-in-out group relative overflow-hidden transform hover:-translate-y-2">
+                            <!-- Animated Inner Glow -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            </div>
+                            <!-- Code Rangers Logo -->
+                            <div class="relative z-10 w-full h-full p-2 flex items-center justify-center">
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-11-09%20at%2012.28.53_708e1398.jpg?updatedAt=1762673483251"
+                                    alt="Code Rangers Logo"
+                                    class="w-full h-auto max-h-full object-contain rounded-2xl drop-shadow-[0_0_15px_rgba(168,85,247,0.3)] group-hover:drop-shadow-[0_0_25px_rgba(168,85,247,0.5)] transition-all duration-700">
+                            </div>
+                        </div>
+                        <div class="about-title h1-div-style">What is Code Rangers?</div>
+                        <p class="about-text">
+                            Code Rangers is the premier technical community of Trinity Institute of Innovation in
+                            Professional Studies
+                            We are dedicated to nurturing the next generation of technologists through
+                            collaboration,
+                            innovation, and hands-on experience.
+                        </p>
+                        <p class="about-text">
+                            From organizing national-level hackathons like CODE नक्षत्र II to hosting technical
+                            workshops and building
+                            impactful projects, Code Rangers provides a platform for students to grow their technical
+                            prowess and
+                            connect with industry leaders.
+                        </p>
+                        <!-- Visit Website Button - Enhanced Clickable Context -->
+                        <div class="mt-8 pb-4 relative z-[9999] pointer-events-auto flex justify-center">
+                            <a href="https://code-rangers.netlify.app/" target="_blank"
+                                class="relative z-[9999] pointer-events-auto px-8 py-3 text-center text-white font-semibold cursor-pointer rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-purple-500/50 no-underline inline-block">
+                                Visit Website
+                            </a>
+                        </div>
+                        <p class="about-text text-gray-400 italic">
+                            Empowering students to code their way to the future.
+                        </p>
+                        <!-- Image Placeholder 2 (Bottom Right) -->
+                        <div class="about-asset about-asset-planet pointer-events-none">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/pinkPlanet.png"
+                                alt="Code Rangers Asset 2"
+                                class="w-full h-auto drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Venue Section -->
+            <section id="venue" class="w-full flex flex-col items-center py-32">
+                <!-- Compact Glowy Title -->
+                <div class="layered-header">
+                    <span class="header-bg-text">VENUE</span>
+                    <div class="header-fg-text h1-div-style">VENUE</div>
+                </div>
+                <div class="max-w-[1200px] mx-auto px-6 flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12 w-full">
+                    <!-- Left Details (Right-aligned text) -->
+                    <div class="lg:w-1/2 flex flex-col gap-10 lg:text-right text-center h-full justify-center">
+                        <div class="venue-info-block">
+                            <h2>Venue</h2>
+                            <p>
+                                TIIPS, Greater Noida
+                            </p>
+                        </div>
+                        <div class="venue-info-block">
+                            <h2>Date and Time</h2>
+                            <p>
+                                May 07 - 08, 2026<br>10:00 AM Onwards
+                            </p>
+                        </div>
+                        <div class="venue-info-block">
+                            <h2>Extra information</h2>
+                            <p class="venue-extra-p lg:ml-auto">
+                                Experience a high-energy environment with high-speed connectivity and ample
+                                collaboration space to build the future. 🚀
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Vertical Separator -->
+                    <div class="hidden lg:block venue-divider"></div>
+                    <!-- Right Map (Glowy frame) -->
+                    <div class="lg:w-1/2 w-full map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2235316041696!2d77.48701047627448!3d28.46112269201994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1d59648a73b%3A0x6b1076b4a3a3a3a3!2sTrinity+Institute+of+Innovation+in+Professional+Studies!5e0!3m2!1sen!2sin!4v1711000000000!5m2!1sen!2sin"
+                            class="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <section id="timeline" class="tl-cosmic-container py-32">
+                <div class="layered-header">
+                    <span class="header-bg-text">TIMELINE</span>
+                    <div class="header-fg-text h1-div-style">EVENT TIMELINE</div>
+                </div>
+                <!-- SVG Winding Path -->
+                <svg class="tl-cosmic-path-svg" viewBox="0 0 1000 1600" preserveAspectRatio="none">
+                    <path class="tl-cosmic-path"
+                        d="M500,0 C800,200 800,400 500,600 C200,800 200,1000 500,1200 C800,1400 800,1600 500,1800" />
+                </svg>
+                <div class="tl-cosmic-items">
+                    <!-- Event 1 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-even">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/mercury.png"
+                                alt="Registration Opens">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">March 05</div>
+                            <div class="tl-cosmic-title h3-div-style">Registration Opens 🚀</div>
+                            <p class="tl-cosmic-descr">The official commencement of the registration process for our
+                                Community. Sign
+                                up and be part of the journey!</p>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-odd">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/venus%20.png"
+                                alt="Acceptance Mails">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">TBD</div>
+                            <div class="tl-cosmic-title h3-div-style">Acceptance Mails 📬</div>
+                            <p class="tl-cosmic-descr">During this time period, acceptance mails will be sent out to
+                                eligible
+                                participants. Keep an eye on your inbox!</p>
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-even">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/earth.png" alt="Mentors Reveal">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">TBD</div>
+                            <div class="tl-cosmic-title h3-div-style">Mentors Reveal 🌟</div>
+                            <p class="tl-cosmic-descr">Our mentors will be unveiled on our social media channels — make
+                                sure you're
+                                following us for the big reveal!</p>
+                        </div>
+                    </div>
+                    <!-- Event 4 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-odd">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/mars%20.png" alt="Judges Reveal">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">TBD</div>
+                            <div class="tl-cosmic-title h3-div-style">Judges Reveal ⚖️</div>
+                            <p class="tl-cosmic-descr">Following the mentors reveal, our judges will also be announced
+                                on our social
+                                media platforms!</p>
+                        </div>
+                    </div>
+                    <!-- Event 5 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-even">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/jupiter.png"
+                                alt="Registration Closes">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">TBD</div>
+                            <div class="tl-cosmic-title h3-div-style">Registration Closes ⏳</div>
+                            <p class="tl-cosmic-descr">The start of this day marks the end of the hackathon's
+                                registration window.
+                                Don't miss your chance!</p>
+                        </div>
+                    </div>
+                    <!-- Event 6 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-odd">
+                        <div class="planet-sphere">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/saturn2.png" alt="Online Round">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">TBD</div>
+                            <div class="tl-cosmic-title h3-div-style">Online Round 💻</div>
+                            <p class="tl-cosmic-descr">An online mentoring round to filter participating teams for the
+                                final (offline)
+                                round. Show your best work!</p>
+                        </div>
+                    </div>
+                    <!-- Event 7 -->
+                    <div class="tl-cosmic-item tl-cosmic-item-even">
+                        <div class="planet-sphere" style="width: 140px; height: 140px;">
+                            <img loading="lazy" src="https://ik.imagekit.io/logicsync/neptune.png" alt="Offline Round">
+                        </div>
+                        <div class="tl-cosmic-info">
+                            <div class="tl-cosmic-date">May 07 - 08</div>
+                            <div class="tl-cosmic-title h3-div-style">Offline Round 🏆</div>
+                            <p class="tl-cosmic-descr">The offline final judgement round begins. Good luck to all
+                                selected
+                                participants — this is your moment!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Prizes Section -->
+            <section id="prizes" class="relative py-32 px-6 overflow-hidden bg-transparent z-[100]">
+                <div class="max-w-[1400px] mx-auto relative z-20 flex flex-col items-center">
+                    <div class="layered-header">
+                        <span class="header-bg-text">PRIZES</span>
+                        <div class="header-fg-text h1-div-style">PRIZES</div>
+                    </div>
+
+                    <div class="w-full max-w-7xl px-6 md:px-12 mx-auto mt-20">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 lg:gap-10">
+                            <!-- 2nd PRIZE (SILVER) -->
+                            <div class="prize-nebula-card acc-silver md:mt-12 order-2 md:order-1">
+                                <span class="prize-bg-rank">2</span>
+                                <div class="p-icon-glow">
+                                    <svg class="w-12 h-12 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L9 9H2L7 14L5 21L12 17L19 21L17 14L22 9H15L12 2Z" />
+                                    </svg>
+                                </div>
+                                <div class="prize-nebula-amount h3-div-style">INR 8K</div>
+                                <p class="prize-nebula-title">1st Runner-Up</p>
+                            </div>
+                            <!-- 1st PRIZE (GOLD) -->
+                            <div class="prize-nebula-card acc-gold order-1 md:order-2 scale-110 z-10">
+                                <span class="prize-bg-rank" style="opacity: 0.1;">1</span>
+                                <div class="p-icon-glow">
+                                    <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L15 8H21L16 12L18 19L12 15L6 19L8 12L3 8H9L12 2Z" />
+                                    </svg>
+                                </div>
+                                <div class="prize-nebula-amount h3-div-style" style="font-size: 3.5rem; color: #fff;">
+                                    INR 12K</div>
+                                <p class="prize-nebula-title" style="color: #fbbf24; font-size: 1.1rem;">Grand Winner
+                                </p>
+                            </div>
+                            <!-- 3rd PRIZE (BRONZE) -->
+                            <div class="prize-nebula-card acc-bronze md:mt-12 order-3">
+                                <span class="prize-bg-rank">3</span>
+                                <div class="p-icon-glow">
+                                    <svg class="w-10 h-10 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L9 9H2L7 14L5 21L12 17L19 21L17 14L22 9H15L12 2Z" />
+                                    </svg>
+                                </div>
+                                <div class="prize-nebula-amount h3-div-style">INR 5K</div>
+                                <p class="prize-nebula-title">2nd Runner-Up</p>
+                            </div>
+                        </div>
+                        <!-- SPECIAL CATEGORIES (Minimal Floating Style) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-4xl mx-auto mt-24 mb-10">
+                            <!-- Best All Girls Team -->
+                            <div class="flex flex-col items-center">
+                                <div class="w-[200px] h-[200px] flex items-center justify-center mb-4">
+                                    <img loading="lazy" src="https://ik.imagekit.io/logicsync/girls"
+                                        alt="Best All Girls Team"
+                                        class="w-full h-full object-contain filter drop-shadow(0 0 20px rgba(244, 114, 182, 0.4)) transition-transform duration-500 hover:scale-110" />
+                                </div>
+                                <div class="prize-nebula-amount h3-div-style"
+                                    style="font-size: 3.2rem; filter: drop-shadow(0 0 10px rgba(244, 114, 182, 0.4));">
+                                    INR 5000/-</div>
+                                <p class="prize-nebula-title"
+                                    style="color: #cbd5e1; opacity: 0.9; letter-spacing: 1px; font-size: 1.1rem;">Best
+                                    All Girls Team</p>
+                            </div>
+                            <!-- Best Beginner Team -->
+                            <div class="flex flex-col items-center">
+                                <div class="w-[200px] h-[200px] flex items-center justify-center mb-4">
+                                    <img loading="lazy" src="https://ik.imagekit.io/logicsync/beginner.svg"
+                                        alt="Best Beginner Team"
+                                        class="w-full h-full object-contain filter drop-shadow(0 0 20px rgba(52, 211, 153, 0.4)) transition-transform duration-500 hover:scale-110" />
+                                </div>
+                                <div class="prize-nebula-amount h3-div-style"
+                                    style="font-size: 3.2rem; filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.4));">
+                                    INR 5000/-</div>
+                                <p class="prize-nebula-title"
+                                    style="color: #cbd5e1; opacity: 0.9; letter-spacing: 1px; font-size: 1.1rem;">Best
+                                    Beginner Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tracks Section -->
+            <section id="tracks" class="relative py-32 px-6 overflow-hidden bg-transparent z-[100]">
+                <div class="max-w-[1200px] mx-auto relative z-20 flex flex-col items-center">
+                    <div class="layered-header">
+                        <span class="header-bg-text">TRACKS</span>
+                        <div class="header-fg-text h1-div-style">TRACKS</div>
+                    </div>
+                    <div class="flex justify-center w-full px-6 mb-20">
+                        <div class="border border-white/10 rounded-3xl px-10 py-5 max-w-4xl text-center text-sm md:text-base font-medium text-white/70 bg-white/[0.02] backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.3)]"
+                            style="font-family: 'League Spartan', sans-serif;">
+                            Though CODE नक्षत्र II is an open innovation event! Here are a few fields you can work on
+                            for your awesome
+                            hackathon projects!
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full">
+                        <!-- Healthcare -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image%202" alt="Healthcare"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Healthcare</div>
+                        </div>
+                        <!-- Agriculture -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image1" alt="Agriculture"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Agriculture</div>
+                        </div>
+                        <!-- Technology -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image%205" alt="Technology"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Technology</div>
+                        </div>
+                        <!-- AI/ML -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image" alt="AI/ML"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">AI/ML</div>
+                        </div>
+                        <!-- IoT -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/3.png" alt="IoT"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">IoT</div>
+                        </div>
+                        <!-- Web3 -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image6" alt="Web3"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Web3</div>
+                        </div>
+                        <!-- Open Innovation -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/image%204"
+                                    alt="Open Innovation" class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Open Innovation</div>
+                        </div>
+                        <!-- Defence -->
+                        <div class="track-card group">
+                            <div class="track-img-wrapper">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/5.png" alt="Defence"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <div class="track-title text-[#a855f7] h3-div-style">Defence</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Events Section -->
+            <section id="events"
+                class="relative py-32 flex flex-col items-center justify-center overflow-hidden z-[100] bg-transparent">
+                <div class="layered-header mb-16 z-20">
+                    <span class="header-bg-text">EVENTS</span>
+                    <div class="header-fg-text h1-div-style text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 drop-shadow-[0_0_15px_rgba(168,85,247,0.3)]"
+                        style="font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: 0.1em;">EVENTS</div>
+                </div>
+                <!-- Photo Grid matching the 4x3 masonry layout -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 w-full max-w-6xl mt-10 z-10 px-6 md:auto-rows-[250px]"
+                    style="font-family: 'League Spartan', sans-serif;">
+                    <!-- Row 1 -->
+                    <!-- Image A (Top Left) -->
+                    <div
+                        class="md:col-span-2 w-full h-[250px] md:h-full border border-white/10 outline outline-1 outline-white/20 outline-offset-4 hover:outline-fuchsia-500/50 bg-[#121212]/50 overflow-hidden relative flex items-center justify-center group shadow-[0_8px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(217,70,239,0.25)] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-500">
+                        <span class="absolute text-white/30 text-sm tracking-widest font-semibold z-0">PASTE IMAGE URL
+                            IN SRC</span>
+                        <img loading="lazy" src="https://ik.imagekit.io/logicsync/nk.jpg?updatedAt=1759836869416"
+                            alt="Event Frame 1"
+                            class="w-full h-full object-cover relative z-10 transition-transform duration-[800ms] group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-fuchsia-900/40 via-transparent to-cyan-900/20 z-20 pointer-events-none opacity-60 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <!-- Text B (3000+ Hackers) -->
+                    <div
+                        class="md:col-span-1 w-full h-[150px] md:h-full flex flex-col items-center justify-center bg-transparent group cursor-default transition-transform duration-500 hover:scale-110">
+                        <h2
+                            class="text-white/20 text-[3.5rem] md:text-[4.5rem] font-black leading-none tracking-wide drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:text-white group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            3000+</h2>
+                        <p
+                            class="text-white/30 text-xl md:text-2xl font-bold mt-1 tracking-wider drop-shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:text-white/90 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            Hackers</p>
+                    </div>
+                    <!-- Image C (Tall Right) -->
+                    <div
+                        class="md:col-span-1 md:row-span-2 w-full h-[300px] md:h-full border border-white/10 outline outline-1 outline-white/20 outline-offset-4 hover:outline-purple-500/50 bg-[#121212]/50 overflow-hidden relative flex items-center justify-center group shadow-[0_8px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(168,85,247,0.25)] hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-500">
+                        <span
+                            class="absolute text-white/30 text-sm tracking-widest font-semibold z-0 text-center px-4">PASTE
+                            TALL
+                            IMAGE URL</span>
+                        <img loading="lazy" src="https://ik.imagekit.io/logicsync/sih222.jpg?updatedAt=1759836292864"
+                            alt="Event Frame 2"
+                            class="w-full h-full object-cover relative z-10 transition-transform duration-[800ms] group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-b from-purple-900/40 via-transparent to-[#121212] z-20 pointer-events-none opacity-60 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <!-- Text D (40+ Partners) -->
+                    <div
+                        class="md:col-span-1 w-full h-[150px] md:h-full flex flex-col items-center justify-center bg-transparent group cursor-default transition-transform duration-500 hover:scale-110">
+                        <h2
+                            class="text-white/20 text-[3.5rem] md:text-[4.5rem] font-black leading-none tracking-wide drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:text-white group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            40+</h2>
+                        <p
+                            class="text-white/30 text-xl md:text-2xl font-bold mt-1 tracking-wider drop-shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:text-white/90 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            Partners</p>
+                    </div>
+                    <!-- Image E (Middle) -->
+                    <div
+                        class="md:col-span-2 w-full h-[250px] md:h-full border border-white/10 outline outline-1 outline-white/20 outline-offset-4 hover:outline-cyan-500/50 bg-[#121212]/50 overflow-hidden relative flex items-center justify-center group shadow-[0_8px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(34,211,238,0.25)] hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-500">
+                        <span class="absolute text-white/30 text-sm tracking-widest font-semibold z-0">PASTE IMAGE URL
+                            IN SRC</span>
+                        <img loading="lazy"
+                            src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-07%20at%2016.40.04_efbeb055.jpg?updatedAt=1759835587076"
+                            alt="Event Frame 3"
+                            class="w-full h-full object-cover relative z-10 transition-transform duration-[800ms] group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-cyan-900/30 via-transparent to-blue-900/30 z-20 pointer-events-none opacity-60 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <!-- Image F (Bottom Left) -->
+                    <div
+                        class="md:col-span-1 w-full h-[250px] md:h-full border border-white/10 outline outline-1 outline-white/20 outline-offset-4 hover:outline-purple-500/50 bg-[#121212]/50 overflow-hidden relative flex items-center justify-center group shadow-[0_8px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(168,85,247,0.25)] hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-500">
+                        <span
+                            class="absolute text-white/30 text-sm tracking-widest font-semibold z-0 text-center px-2">PASTE
+                            IMAGE
+                            URL</span>
+                        <img loading="lazy" src="https://ik.imagekit.io/logicsync/Ha17.jpg" alt="Event Frame 4"
+                            class="w-full h-full object-cover relative z-10 transition-transform duration-[800ms] group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-purple-900/30 to-fuchsia-900/20 z-20 pointer-events-none opacity-60 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <!-- Text G (24+ Hack Hours) -->
+                    <div
+                        class="md:col-span-1 w-full h-[150px] md:h-full flex flex-col items-center justify-center bg-transparent group cursor-default transition-transform duration-500 hover:scale-110">
+                        <h2
+                            class="text-white/20 text-[3.5rem] md:text-[4.5rem] font-black leading-none tracking-wide drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:text-white group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            24+</h2>
+                        <p
+                            class="text-white/30 text-xl md:text-2xl font-bold mt-1 tracking-wider drop-shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:text-white/90 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-all duration-500">
+                            Hack Hours</p>
+                    </div>
+                    <!-- Image H (Bottom Right) -->
+                    <div
+                        class="md:col-span-2 w-full h-[250px] md:h-full border border-white/10 outline outline-1 outline-white/20 outline-offset-4 hover:outline-fuchsia-500/50 bg-[#121212]/50 overflow-hidden relative flex items-center justify-center group shadow-[0_8px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_15px_40px_rgba(217,70,239,0.25)] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-500">
+                        <span class="absolute text-white/30 text-sm tracking-widest font-semibold z-0">PASTE IMAGE URL
+                            IN SRC</span>
+                        <img loading="lazy" src="https://ik.imagekit.io/logicsync/TJ1.jpg" alt="Event Frame 5"
+                            class="w-full h-full object-cover relative z-10 transition-transform duration-[800ms] group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-fuchsia-900/30 via-transparent to-transparent z-20 pointer-events-none opacity-60 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Removed high-height spacer for equal distance -->
+
+            <section id="why-us" class="relative py-32 px-6 overflow-hidden bg-transparent">
+                <div class="max-w-[1200px] mx-auto relative z-10 flex flex-col items-center">
+                    <!-- Title -->
+                    <div class="layered-header">
+                        <span class="header-bg-text">SPONSORS</span>
+                        <div class="header-fg-text h1-div-style">WHY SPONSOR US?</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-[1100px]"
+                        style="font-family: 'League Spartan', sans-serif;">
+                        <!-- Card 1: Promotion -->
+                        <div
+                            class="group relative bg-[#121212]/70 backdrop-blur-xl rounded-[3rem] p-12 flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 border border-white/5 hover:border-purple-500/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_30px_rgba(168,85,247,0.1)]">
+                            <div
+                                class="w-16 h-16 rounded-full bg-[#1e1436] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-500">
+                                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                                </svg>
+                            </div>
+                            <div class="text-2xl font-bold tracking-widest mb-4 uppercase h3-div-style"
+                                style="color: #a855f7;">
+                                Promotion</div>
+                            <p class="text-gray-300 leading-relaxed text-lg font-medium opacity-90">
+                                Sponsoring events promotes your brand. Higher sponsorship packages offer more exposure.
+                                This creates a
+                                positive perception of your company.
+                            </p>
+                        </div>
+                        <!-- Card 2: Recruitment -->
+                        <div
+                            class="group relative bg-[#121212]/70 backdrop-blur-xl rounded-[3rem] p-12 flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 border border-white/5 hover:border-purple-500/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_30px_rgba(168,85,247,0.1)]">
+                            <div
+                                class="w-16 h-16 rounded-full bg-[#1e1436] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-500">
+                                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="text-2xl font-bold tracking-widest mb-4 uppercase h3-div-style"
+                                style="color: #a855f7;">
+                                Recruitment</div>
+                            <p class="text-gray-300 leading-relaxed text-lg font-medium opacity-90">
+                                Sponsor CODE नक्षत्र II, connect with potential employees. Meet bright minds from the
+                                region, interview
+                                potential candidates. Build your team with sponsorship.
+                            </p>
+                        </div>
+                        <!-- Card 3: New Technology -->
+                        <div
+                            class="group relative bg-[#121212]/70 backdrop-blur-xl rounded-[3rem] p-12 flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 border border-white/5 hover:border-purple-500/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_30px_rgba(168,85,247,0.1)]">
+                            <div
+                                class="w-16 h-16 rounded-full bg-[#1e1436] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-500">
+                                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                            </div>
+                            <div class="text-2xl font-bold tracking-widest mb-4 uppercase h3-div-style"
+                                style="color: #a855f7;">New
+                                Technology</div>
+                            <p class="text-gray-300 leading-relaxed text-lg font-medium opacity-90">
+                                Test new technologies and incentivize students. Create challenges aligned with your
+                                technology to
+                                promote it to a wider audience.
+                            </p>
+                        </div>
+                        <!-- Card 4: Inspiration -->
+                        <div
+                            class="group relative bg-[#121212]/70 backdrop-blur-xl rounded-[3rem] p-12 flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 border border-white/5 hover:border-purple-500/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_30px_rgba(168,85,247,0.1)]">
+                            <div
+                                class="w-16 h-16 rounded-full bg-[#1e1436] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-500">
+                                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div class="text-2xl font-bold tracking-widest mb-4 uppercase h3-div-style"
+                                style="color: #a855f7;">
+                                Inspiration</div>
+                            <p class="text-gray-300 leading-relaxed text-lg font-medium opacity-90">
+                                Stimulate fresh ideas for challenging problems. Inspire both participants and your team
+                                by tackling
+                                relevant issues in your field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =============================================
+               JUDGES SECTION
+               To edit a judge: update name, role, bio,
+               photo URL (style="background-image: url(...)"),
+               and LinkedIn href below.
+               ============================================= -->
+            <div class="flex flex-col items-center justify-center py-32 z-[100]" id="judges">
+                <div class="layered-header">
+                    <span class="header-bg-text">JUDGES</span>
+                    <div class="header-fg-text h1-div-style">Our Judges</div>
+                </div>
+                <div class="jg-grid">
+                    <!-- ── JUDGE 1 ────────────────────────────── -->
+                    <div class="jg-card">
+                        <div class="jg-photo"
+                            style="background-image: url('/judges/DishaLuthra.jpeg'); filter: grayscale(1) opacity(0.3);">
+                            <div class="jg-tba-wrapper">
+                                <span class="jg-tba-text">To Be Announced</span>
+                            </div>
+                        </div>
+                        <div class="jg-info">
+                            <!-- Details Hidden -->
+                        </div>
+                    </div>
+                    <!-- ── JUDGE 2 ────────────────────────────── -->
+                    <div class="jg-card">
+                        <div class="jg-photo"
+                            style="background-image: url('/judges/MohammadMudassir.jpeg'); filter: grayscale(1) opacity(0.3);">
+                            <div class="jg-tba-wrapper">
+                                <span class="jg-tba-text">To Be Announced</span>
+                            </div>
+                        </div>
+                        <div class="jg-info">
+                            <!-- Details Hidden -->
+                        </div>
+                    </div>
+                    <!-- ── JUDGE 3 ────────────────────────────── -->
+                    <div class="jg-card">
+                        <div class="jg-photo"
+                            style="background-image: url('/judges/PiyushKhurana.jpeg'); filter: grayscale(1) opacity(0.3);">
+                            <div class="jg-tba-wrapper">
+                                <span class="jg-tba-text">To Be Announced</span>
+                            </div>
+                        </div>
+                        <div class="jg-info">
+                            <!-- Details Hidden -->
+                        </div>
+                    </div>
+                    <!-- ── JUDGE 4 ────────────────────────────── -->
+                    <div class="jg-card">
+                        <div class="jg-photo"
+                            style="background-image: url('/judges/ShivamGoyal.jpeg'); filter: grayscale(1) opacity(0.3);">
+                            <div class="jg-tba-wrapper">
+                                <span class="jg-tba-text">To Be Announced</span>
+                            </div>
+                        </div>
+                        <div class="jg-info">
+                            <!-- Details Hidden -->
+                        </div>
+                    </div>
+                </div><!-- /jg-grid -->
+            </div><!-- /judges -->
+            <!-- Organisers Section (Cosmic Bubbles) -->
+            <section id="organisers"
+                class="flex flex-col items-center justify-center py-32 z-[100] relative overflow-hidden">
+                <div class="layered-header mb-20">
+                    <span class="header-bg-text">ORGANISERS</span>
+                    <div class="header-fg-text h1-div-style">ORGANISERS</div>
+                </div>
+
+                <div class="org-bubble-container px-10">
+                    <!-- Row 1: 4 Large Leads -->
+                    <div class="org-row org-row-leads">
+                        <!-- Lead 1 -->
+                        <div class="org-bubble-wrapper">
+                            <div class="org-bubble-frame org-bubble-large">
+                                <div class="org-bubble-img">
+                                    <img loading="lazy"
+                                        src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202026-03-28%20at%204.47.17%20PM.jpeg"
+                                        alt="Mrs. Gunjan Arya">
+                                </div>
+                            </div>
+                            <div class="org-bubble-name h3-div-style">Mrs. Gunjan Arya</div>
+                            <p class="org-bubble-role">Faculty lead</p>
+                            <div class="org-bubble-socials">
+                                <a href="https://www.linkedin.com/in/gunjan-arya-705215150/" class="org-social-btn"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- Lead 2 -->
+                        <div class="org-bubble-wrapper">
+                            <div class="org-bubble-frame org-bubble-large">
+                                <div class="org-bubble-img">
+                                    <img loading="lazy"
+                                        src="https://ik.imagekit.io/logicsync/harshit.jpg?updatedAt=1761472121560"
+                                        alt="Harshit Gupta">
+                                </div>
+                            </div>
+                            <div class="org-bubble-name h3-div-style">Harshit Gupta</div>
+                            <p class="org-bubble-role">Organising lead</p>
+                            <div class="org-bubble-socials">
+                                <a href="https://www.linkedin.com/in/harshit-gupta-361574285/" class="org-social-btn"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- Lead 3 -->
+                        <div class="org-bubble-wrapper">
+                            <div class="org-bubble-frame org-bubble-large">
+                                <div class="org-bubble-img">
+                                    <img loading="lazy" src="https://ik.imagekit.io/logicsync/dhruv.jpg"
+                                        alt="Dhruv Chaursiya">
+                                </div>
+                            </div>
+                            <div class="org-bubble-name h3-div-style">Dhruv Chaursiya</div>
+                            <p class="org-bubble-role">Organising lead</p>
+                            <div class="org-bubble-socials">
+                                <a href="https://www.linkedin.com/in/dhruv-kumar-337012256/" class="org-social-btn"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- Lead 4 -->
+                        <div class="org-bubble-wrapper">
+                            <div class="org-bubble-frame org-bubble-large">
+                                <div class="org-bubble-img">
+                                    <img loading="lazy"
+                                        src="https://ik.imagekit.io/logicsync/varun.jpg?updatedAt=1761472119018"
+                                        alt="Varun Gupta">
+                                </div>
+                            </div>
+                            <div class="org-bubble-name h3-div-style">Varun Gupta</div>
+                            <p class="org-bubble-role">Organising lead</p>
+                            <div class="org-bubble-socials">
+                                <a href="https://www.linkedin.com/in/varun-gupta-3b5779239/" class="org-social-btn"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Row -->
+                    <div class="org-row org-row-team">
+                        <!-- Generating the bubbles for existing members -->
+                        <div id="dynamic-team-container" class="contents"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Core Team Rolling Gallery -->
+            <section id="core-team" class="core-team-section">
+                <div class="core-team-box">
+                    <div class="marquee-container">
+                        <div class="marquee-track">
+                            <!-- Item 1-6 (Placeholders) -->
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202026-03-28%20at%204.47.17%20PM.jpeg"
+                                    alt="Member 1"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        1<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-26%20at%2014.42.11_073a851a.jpg?updatedAt=1761471291694"
+                                    alt="Member 2"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        2<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/divina.jpg" alt="Member 3"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        3<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/ankit.jpg" alt="Member 4"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        4<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/aashish.jpg" alt="Member 5"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        5<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/akshara.jpg?updatedAt=1761473819022"
+                                    alt="Member 6"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        6<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/Krish.jpg" alt="Member 7"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        7<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/Anushka.jpg?updatedAt=1774635858415"
+                                    alt="Member 8"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        8<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/Shrishti%20.webp?updatedAt=1774634616965"
+                                    alt="Member 9"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        9<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/Zaid.jpg?updatedAt=1774634616466"
+                                    alt="Member 10"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        10<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <div
+                                class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500">
+                                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/HARSHITA.jpg?updatedAt=1774634615639"
+                                    alt="Member 11"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="core-team-placeholder w-full h-full flex items-center justify-center relative z-0 p-4 text-center">
+                                    <span class="text-white/30 text-xs font-bold tracking-widest uppercase">Member
+                                        11<br><br>Paste
+                                        URL</span>
+                                </div>
+                            </div>
+                            <!-- Clone 1-11 for seamless loop -->
+                            <!-- (Cloning 1-6 first as existing) -->
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-26%20at%2010.57.33_2a95ecda.jpg?updatedAt=1761471290203"
+                                    alt="Member 1"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/WhatsApp%20Image%202025-10-26%20at%2014.42.11_073a851a.jpg?updatedAt=1761471291694"
+                                    alt="Member 2"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/divina.jpg" alt="Member 3"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/ankit.jpg" alt="Member 4"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="https://ik.imagekit.io/logicsync/aashish.jpg" alt="Member 5"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy"
+                                    src="https://ik.imagekit.io/logicsync/akshara.jpg?updatedAt=1761473819022"
+                                    alt="Member 6"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <!-- Clones for 7-11 -->
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="" alt="Member 7"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="" alt="Member 8"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="" alt="Member 9"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="" alt="Member 10"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="core-team-item relative group overflow-hidden border border-white/10 rounded-full aspect-square bg-[#121212]/60 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-500"
+                                aria-hidden="true">
+                                <img loading="lazy" src="" alt="Member 11"
+                                    class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="core-team-info">
+                        <h2>Core Team</h2>
+                        <p>Thanks to all who worked for it</p>
+                    </div>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center py-32" id="sponsors">
+                <div class="layered-header">
+                    <span class="header-bg-text">SPONSORS</span>
+                    <div class="header-fg-text h1-div-style">Our Sponsors</div>
+                </div>
+                <div class="w-full max-w-7xl px-10 flex flex-col gap-24">
+                    <!-- GOLD TIER -->
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-3xl md:text-4xl font-black text-amber-400 mb-12 uppercase tracking-[0.2em] drop-shadow-[0_0_15px_rgba(251,191,36,0.3)]">
+                            Gold Tier</h2>
+                        <div class="flex flex-row flex-wrap justify-center gap-12 w-full">
+                            <!-- PASTE GOLD SPONSOR CARDS OR IMAGES HERE -->
+                            <div
+                                class="relative w-64 h-32 md:w-80 md:h-40 bg-white/5 border border-amber-400/20 rounded-2xl flex items-center justify-center backdrop-blur-sm group hover:border-amber-400/50 transition-all duration-500 overflow-hidden shadow-[0_0_30px_rgba(251,191,36,0.05)]">
+                                <!-- Diagonal Label -->
+                                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="text-amber-400/10 text-2xl md:text-3xl font-black uppercase tracking-widest -rotate-12 whitespace-nowrap select-none">
+                                        To Be Announced
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SILVER TIER -->
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-2xl md:text-3xl font-black text-slate-300 mb-10 uppercase tracking-[0.15em] drop-shadow-[0_0_12px_rgba(203,213,225,0.2)]">
+                            Silver Tier</h2>
+                        <div class="flex flex-row flex-wrap justify-center gap-10 w-full">
+                            <!-- PASTE SILVER SPONSOR CARDS OR IMAGES HERE -->
+                            <div
+                                class="relative w-56 h-28 md:w-72 md:h-36 bg-white/5 border border-slate-300/10 rounded-xl flex items-center justify-center backdrop-blur-sm group hover:border-slate-300/40 transition-all duration-500 overflow-hidden shadow-[0_0_20px_rgba(203,213,225,0.03)]">
+                                <!-- Diagonal Label -->
+                                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="text-slate-300/10 text-xl md:text-2xl font-black uppercase tracking-widest -rotate-12 whitespace-nowrap select-none">
+                                        To Be Announced
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BRONZE TIER -->
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-xl md:text-2xl font-black text-[#cd7f32] mb-8 uppercase tracking-[0.1em] drop-shadow-[0_0_10px_rgba(205,127,50,0.2)]">
+                            Bronze Tier</h2>
+                        <div class="flex flex-row flex-wrap justify-center gap-8 w-full">
+                            <!-- PASTE BRONZE SPONSOR CARDS OR IMAGES HERE -->
+                            <div
+                                class="relative w-48 h-24 md:w-60 md:h-32 bg-white/5 border border-[#cd7f32]/10 rounded-lg flex items-center justify-center backdrop-blur-sm group hover:border-[#cd7f32]/40 transition-all duration-500 overflow-hidden shadow-[0_0_15px_rgba(205,127,50,0.02)]">
+                                <!-- Diagonal Label -->
+                                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="text-[#cd7f32]/10 text-lg md:text-xl font-black uppercase tracking-widest -rotate-12 whitespace-nowrap select-none">
+                                        To Be Announced
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        </div>
+        </section>
+        <!-- DIGITAL SWAG SECTION -->
+        <section id="swag"
+            class="flex flex-col items-center justify-center py-32 px-4 md:px-10 lg:px-20 w-full z-[100] relative max-w-[1400px] mx-auto min-h-[80vh]">
+            <div class="layered-header">
+                <span class="header-bg-text">BADGE</span>
+                <div class="header-fg-text h1-div-style">DIGITAL BADGE</div>
+            </div>
+            <!-- MAIN SWAG CARD -->
+            <div
+                class="w-full bg-transparent rounded-[32px] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5 flex flex-col lg:flex-row gap-10 lg:gap-16 relative">
+                <!-- LEFT COLUMN (Controls & Description) -->
+                <div class="flex-1 w-full flex flex-col justify-center gap-8">
+                    <!-- Frame URL Input Removed as requested -->
+                    <!-- Inner Description Card -->
+                    <div class="bg-[#13131a] rounded-2xl p-6 md:p-8 border border-[#2a2a35] shadow-inner flex flex-col gap-6"
+                        style="font-family: 'League Spartan', sans-serif;">
+                        <div>
+                            <div class="text-3xl md:text-4xl font-bold text-gray-100 mb-4 h1-div-style">
+                                CODE नक्षत्र <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">II</span>
+                                Badge
+                            </div>
+                            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                                Embark on an epic hack-adventure to 'explore the stars' at CODE नक्षत्र II. Craft
+                                your cosmic identity
+                                and reveal your inner stellar innovator with our limited-edition digital badge.
+                            </p>
+                            <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                                Personalize it with your name and photo, and broadcast your profile across the
+                                cosmos (and social
+                                media). ⭐
+                            </p>
+                            <div class="flex items-center gap-2 mt-2 text-[#34d399] text-sm md:text-base font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span>We don't store your image. Your privacy is our priority</span>
+                            </div>
+                        </div>
+                        <!-- Name Input -->
+                        <div class="flex flex-col gap-2">
+                            <label for="swag-name"
+                                class="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 tracking-wider uppercase">YOUR
+                                NAME</label>
+                            <input type="text" id="swag-name" placeholder="Enter Your Name"
+                                class="w-full bg-[#1a1a24] border border-[#2a2a35] rounded-xl px-4 py-4 text-gray-200 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-gray-600 shadow-inner">
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <input type="file" id="swag-upload" accept="image/*" class="hidden">
+                            <button onclick="document.getElementById('swag-upload').click()"
+                                class="flex-[1] bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-purple-500/20 border border-purple-500/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" class="text-white" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                                    </path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                                Upload Image
+                            </button>
+                            <button id="swag-download"
+                                class="flex-[1.2] bg-gradient-to-r from-[#4b5563] to-[#374151] hover:from-[#374151] hover:to-[#1f2937] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg transform hover:-translate-y-0.5 border border-white/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download Badge
+                            </button>
+                        </div>
+                        <!-- Feature Highlights -->
+
+                        <div class="grid grid-cols-3 gap-4 pt-6 mt-2 border-t border-[#2a2a35]">
+                            <div class="flex flex-col items-center justify-center gap-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-purple-400 float-icon">
+                                    <path
+                                        d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z">
+                                    </path>
+                                </svg>
+                                <span
+                                    class="text-xs font-bold text-gray-500 uppercase tracking-widest">Possibilities</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center gap-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-cyan-400 float-icon float-delay-1">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Secure</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center gap-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-pink-400 float-icon float-delay-2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                                <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Instant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT COLUMN (Canvas Preview) -->
+                <div class="flex-1 w-full flex justify-center items-center">
+                    <div
+                        class="relative bg-black rounded-xl p-4 md:p-6 shadow-2xl border-[4px] border-[#22222a] w-full max-w-[500px] h-auto flex flex-col">
+                        <div
+                            class="absolute top-4 left-4 z-10 bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-[0_4px_10px_rgba(168,85,247,0.4)]">
+                            Preview</div>
+                        <div
+                            class="w-full h-full min-h-[400px] relative overflow-hidden rounded-lg bg-[#000000] flex items-center justify-center">
+                            <canvas id="swag-canvas" width="1080" height="1350"
+                                class="w-full h-auto object-contain"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section id="faq" class="relative py-32 mt-[-100px] px-6 overflow-hidden bg-transparent z-[50]">
+            <!-- Floating Assets for FAQ -->
+            <div class="faq-asset faq-asset-left pointer-events-none">
+                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                <img loading="lazy" src="https://ik.imagekit.io/logicsync/planet1.svg?updatedAt=1774371512574"
+                    alt="FAQ Asset Left" class="w-full h-auto drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+            </div>
+            <div class="faq-asset faq-asset-right pointer-events-none">
+                <!-- PASTE IMAGE LINK BELOW IN src="..." -->
+                <img loading="lazy" src="https://ik.imagekit.io/logicsync/planet2.svg?updatedAt=1774371512146"
+                    alt="FAQ Asset Right" class="w-full h-auto drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]">
+            </div>
+            <div class="max-w-[1200px] mx-auto relative z-10">
+                <div class="layered-header">
+                    <span class="header-bg-text">FAQs</span>
+                    <div class="header-fg-text h1-div-style">FAQs</div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" style="font-family: 'League Spartan', sans-serif;">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col gap-4">
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Team Size</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>4 members</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Registration Costs?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Nada. (It’s free!)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Are inter-college teams allowed?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Yes, inter-college teams are allowed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>What’s the duration of the hackathon?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>It’s a 24-hour offline hackathon (be prepared to hack all night!).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>What should I bring offline to the hackathon?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Bring your laptop, charger, extension board, any necessary software/tools and a
+                                        winner mindset.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>I’m a beginner. Should I apply?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Yes! Beginners are absolutely welcome. Hackathons are great for learning,
+                                        teamwork and hands-on experience in a fun, supportive environment. Jump in and
+                                        grow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="flex flex-col gap-4">
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Do I need to bring food or snacks?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Nope! We’ve got all the snacks and caffeine you need just bring your ideas and an
+                                        empty stomach!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Is this hackathon open for all domains?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Yes, it’s open to all domains tech, design, business. Bring your skills and let’s
+                                        build!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Will travel expenses be covered?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>No, we’re unable to cover travel expenses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>What is the theme of the hackathon?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>No theme. No limits. Build something innovative, creative, or even crazy just
+                                        make it impactful.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>When will teams receive the acceptance email?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Acceptance emails will be rolled out in April. Please keep an eye on your
+                                        registered email for updates.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item group">
+                            <div class="faq-header">
+                                <span>Are School students Allowed too?</span>
+                                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <div class="faq-answer-content">
+                                    <p>Yes, we welcome passionate school students to participate and showcase their
+                                        potential!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    faqItems.forEach(item => {
+                        // Entire item is clickable for easy access
+                        item.addEventListener('click', (e) => {
+                            const isActive = item.classList.contains('active');
+                            // Optional: Close others when opening one
+                            if (!isActive) {
+                                faqItems.forEach(other => {
+                                    if (other !== item) other.classList.remove('active');
+                                });
+                            }
+                            item.classList.toggle('active');
+                        });
+                    });
+                });
+            </script>
+        </section>
+        </div>
+    </main>
+    <div class="w-full relative z-[0] mt-[-350px] mb-[-150px] overflow-hidden opacity-80">
+        <img loading="lazy" src="https://ik.imagekit.io/logicsync/juhsl" alt="Footer Banner"
+            class="w-full h-auto drop-shadow-[0_-5px_30px_rgba(168,85,247,0.25)]" />
+    </div>
+    <footer id="contact"
+        class="w-full relative z-[999] bg-[#0c051f]/80 backdrop-blur-md border-t border-purple-500/30 pt-4 pb-4 px-4 md:px-10 overflow-hidden">
+        <!-- Optional: Starry glow effect inside footer -->
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[150px] bg-purple-500/10 blur-[120px] rounded-full pointer-events-none">
+        </div>
+        <div
+            class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center lg:justify-items-start text-center lg:text-left">
+            <!-- Logo Space -->
+            <div class="flex flex-col items-center lg:items-start justify-center relative w-full h-full">
+                <img src="https://ik.imagekit.io/logicsync/nakshatra%20logo.png" alt="CODE Nakshatra Logo"
+                    class="w-[200px] lg:w-[250px] h-auto object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.5)] -ml-4 transition-all duration-300 hover:scale-[1.05] hover:drop-shadow-[0_0_25px_rgba(168,85,247,0.7)] cursor-default" />
+            </div>
+            <!-- Documents -->
+            <div class="flex flex-col items-center lg:items-start gap-4">
+                <div
+                    class="h3-div-style text-lg font-bold text-white relative inline-block pb-1 mb-1 tracking-wide font-['League_Spartan']">
+                    Documents
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></span>
+                </div>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors text-[15px]">CODE Nakshatra - Rule
+                    Book /
+                    Code of Conduct</a>
+                <a href="https://www.namespace.world/events/2N5BNA" target="_blank" rel="noreferrer"
+                    class="text-gray-300 hover:text-white transition-colors text-[15px]"> Code Nakshatra Code of
+                    Conduct</a>
+            </div>
+            <!-- Social Handles -->
+            <div class="flex flex-col items-center lg:items-start gap-4">
+                <div
+                    class="h3-div-style text-lg font-bold text-white relative inline-block pb-1 mb-1 tracking-wide font-['League_Spartan']">
+                    Social Handles
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></span>
+                </div>
+                <div class="flex flex-row gap-4 items-center">
+                    <a href="https://www.instagram.com/code_rangerss/" target="_blank"
+                        class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-all text-gray-300 hover:text-white shadow-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/code-rangerss/posts/?feedView=all" target="_blank"
+                        class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-all text-gray-300 hover:text-white shadow-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-all text-gray-300 hover:text-white shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                    </a>
+                    <a href="https://linktr.ee/coderangerss" target="_blank"
+                        class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-all text-gray-300 hover:text-white shadow-sm">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-93.7-25.7l-6.7-4-69.6 18.3L72 359l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.5-11.3 2.5-2.5 5.6-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.6-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Contact Us -->
+            <div class="flex flex-col items-center lg:items-start gap-4">
+                <div
+                    class="h3-div-style text-xl md:text-2xl font-bold text-white relative inline-block pb-2 mb-2 tracking-wide font-['League_Spartan']">
+                    Contact Us
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></span>
+                </div>
+                <a href="mailto:coderangerss@gmail.com"
+                    class="text-gray-300 hover:text-white transition-colors text-[15px]">coderangerss@gmail.com</a>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="w-full mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-[13px] font-medium tracking-wide px-4"
+            style="font-family: 'League Spartan', sans-serif;">
+            <div class="opacity-90">© 2026 Code Rangers. Built with ❤️ by our community.</div>
+            <div class="opacity-70 text-[12px] tracking-widest uppercase">Powered by Snacks & Caffeine</div>
+        </div>
+    </footer>
+
+    <!-- =====================================================
+           GSAP ANIMATIONS  –  Edit this block to add/change animations
+           Docs: https://gsap.com/docs/v3/
+           ===================================================== -->
+
+    <!-- SWAG CANVAS LOGIC -->
+
+
+    <!-- Back to Top Rocket -->
+
+    <div id="rocketTop" class="rocket-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <!-- Obsidian & Neon Sci-Fi Rocket -->
+        <svg width="45" height="70" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Carbon Hull Filter -->
+                <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+                <!-- Gradients -->
+                <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0f172a" />
+                    <stop offset="50%" stop-color="#1e293b" />
+                    <stop offset="100%" stop-color="#0f172a" />
+                </linearGradient>
+                <linearGradient id="neonLight" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#a855f7" />
+                    <stop offset="100%" stop-color="#7c3aed" />
+                </linearGradient>
+            </defs>
+            <!-- Side Thrusters -->
+            <path d="M15 65 L8 78 L20 78 Z" fill="#1e1b4b" stroke="#a855f7" stroke-width="1.5"
+                filter="url(#neonGlow)" />
+            <path d="M45 65 L52 78 L40 78 Z" fill="#1e1b4b" stroke="#a855f7" stroke-width="1.5"
+                filter="url(#neonGlow)" />
+            <!-- Main Body (Carbon/Obsidian) -->
+            <path d="M30 5 C18 20 15 50 15 80 H45 C45 50 42 20 30 5 Z" fill="url(#bodyGrad)" stroke="#334155"
+                stroke-width="1" />
+            <!-- Neon Decorative Rings -->
+            <ellipse cx="30" cy="45" rx="15" ry="3" fill="none" stroke="#a855f7" stroke-width="1"
+                stroke-opacity="0.6" />
+            <ellipse cx="30" cy="55" rx="14" ry="2.5" fill="none" stroke="#a855f7" stroke-width="1"
+                stroke-opacity="0.4" />
+            <!-- Glowing Cabin -->
+            <circle cx="30" cy="30" r="5" fill="#a855f7" style="filter: blur(1px);" />
+            <circle cx="30" cy="30" r="2" fill="white" />
+            <!-- Nose Tip Neon -->
+            <path d="M30 5 C24 15 22 25 22 25 H38 C38 25 36 15 30 5 Z" fill="url(#neonLight)" filter="url(#neonGlow)" />
+        </svg>
+        <!-- Plasma Exhaust Beam -->
+        <div class="thrust-container" style="bottom: -20px;">
+            <div
+                style="width: 14px; height: 35px; background: linear-gradient(to bottom, #a855f7, #6d28d9, transparent); border-radius: 50% 50% 0 0; filter: blur(3px); animation: plasmaPulse 0.1s infinite alternate;">
+            </div>
+            <div
+                style="width: 6px; height: 15px; background: white; position: absolute; top: 0; left: 50%; transform: translateX(-50%); border-radius: 50%; filter: blur(1px); opacity: 0.8;">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ===== MERGED ANIMATION ENGINE (Preloader → Persistent Background) ===== -->
+
+
+    <!-- Cosmic UX Elements -->
+    <div id="neon-scroll-progress"></div>
+    <div id="custom-cursor-dot"></div>
+    <div id="custom-cursor-halo"></div>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+
+</html>
