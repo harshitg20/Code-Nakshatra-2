@@ -2679,3 +2679,36 @@ html, body, a, button, * {
   transform: translate(-50%, -50%);
 }
 
+.prize-perks {
+  margin-top: 10px;
+  padding-left: 16px;
+  text-align: left;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.prize-perks li {
+  margin-bottom: 4px;
+  list-style-type: disc;
+  opacity: 0.9;
+}
+
+.prize-perks li {
+  list-style: none;
+  position: relative;
+  padding-left: 14px;
+}
+
+.prize-perks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #a855f7;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #a855f7;
+}
+
