@@ -2658,3 +2658,10 @@ a, button {
     cursor: inherit !important;
 }
 
+.emoji-fix {
+    -webkit-text-fill-color: initial !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    display: inline-block;
+}
+
