@@ -716,7 +716,7 @@
             
             // Only apply custom cursor on fine pointers (desktops/laptops)
             if (window.matchMedia("(pointer: fine)").matches) {
-                document.body.style.cursor = 'none';
+                document.documentElement.style.cursor = 'none';
                 
                 let mouseX = window.innerWidth / 2;
                 let mouseY = window.innerHeight / 2;
