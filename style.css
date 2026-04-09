@@ -2667,3 +2667,15 @@ a, button {
     display: inline-block;
 }
 
+html, body, a, button, * {
+  cursor: none !important;
+}
+
+#custom-cursor-dot,
+#custom-cursor-halo {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
