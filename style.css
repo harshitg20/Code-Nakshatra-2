@@ -241,6 +241,15 @@ a:hover {
 }
 
 /* Single step (Planet + Info) */
+.tl-cosmic-path-svg {
+  position: absolute;
+  top: 140px;
+}
+
+.tl-cosmic-path {
+  mask-image: linear-gradient(to bottom, transparent 0%, white 10%);
+}
+
 .tl-cosmic-item {
   display: flex;
   align-items: center;
@@ -1117,6 +1126,11 @@ a:hover {
   transform: scale(1.2);
 }
 
+@media (max-width: 640px) {
+  .org-bubble-wrapper {
+    max-width: 90px;
+  }
+}
 /* =============================================
    ROLLING GALLERY (CORE TEAM)
    ============================================= */
@@ -2643,3 +2657,4 @@ a:hover {
 a, button {
     cursor: inherit !important;
 }
+
