@@ -2,12 +2,11 @@
 
 ![Code Nakshatra Banner](https://ik.imagekit.io/logicsync/banner.jpg)
 
-**CODE नक्षत्र II** is a cutting-edge, hybrid national-level hackathon and technical competition organized by **Code Rangers**, the premier technical community of Trinity Institute of Innovation in Professional Studies (TIIPS). We empower students to code their way to the future! 
+**CODE नक्षत्र II** is a cutting-edge, offline national-level hackathon and technical competition organized by **Code Rangers**, the premier technical community where developers, designers, and innovators converge to create the future.. We empower students to code their way to the future! 
 
 ## 🌌 About the Event
 CODE नक्षत्र II bridges the gap between creative brainstorming and technical implementation, fostering a space where innovation meets practical solutions.
 
-- **Online Round**: Present visionary projects to a panel of expert mentors.
 - **Offline Round (May 07 - 08, 2026)**: The brightest selected minds compete for recognition, networking, and a massive prize pool at TIIPS, Greater Noida.
 
 ### 💰 Prize Pool
@@ -65,5 +64,5 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 - **Contact Email:** [coderangerss@gmail.com](mailto:coderangerss@gmail.com)
 
 <p align="center">
-  <i>Developed with ❤️ by the students of TIIPS, Greater Noida.</i>
+  <i>Developed with ❤️ by CODE RANGERS</i>
 </p>
