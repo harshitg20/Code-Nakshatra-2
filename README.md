@@ -13,8 +13,8 @@ CODE नक्षत्र II bridges the gap between creative brainstorming and
 - **🏆 Grand Winner:** INR 12,000/-
 - **🥈 1st Runner-Up:** INR 8,000/-
 - **🥉 2nd Runner-Up:** INR 5,000/-
-- **👩‍💻 Best All-Girls Team:** INR 5,000/-
-- **🌱 Best Beginner Team:** INR 5,000/-
+- **👩‍💻 Best All-Girls Team:** INR 2,500/-
+- **🌱 Best Beginner Team:** INR 2,500/-
 
 ## 🛠️ Built With (Tech Stack)
 This frontend website is built using modern web technologies focused on creating an interactive, cosmic 3D experience:
